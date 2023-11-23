@@ -1,0 +1,4 @@
+usama,123,ADMIN
+saad,456,CUSTOMER
+hamza,777,ADMIN
+usa,000,CUSTOMER
