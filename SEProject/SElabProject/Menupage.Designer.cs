@@ -38,6 +38,12 @@ namespace SElabProject
             this.button4 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.paneltitlebar = new System.Windows.Forms.Panel();
+            this.titlelbl = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnclose = new System.Windows.Forms.Button();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -46,12 +52,11 @@ namespace SElabProject
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.paneltitlebar = new System.Windows.Forms.Panel();
-            this.titlelbl = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panelmenu.SuspendLayout();
             this.panellogo.SuspendLayout();
+            this.paneltitlebar.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -60,7 +65,6 @@ namespace SElabProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.paneltitlebar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelmenu
@@ -203,6 +207,73 @@ namespace SElabProject
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // paneltitlebar
+            // 
+            this.paneltitlebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.paneltitlebar.Controls.Add(this.btnclose);
+            this.paneltitlebar.Controls.Add(this.titlelbl);
+            this.paneltitlebar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneltitlebar.Location = new System.Drawing.Point(250, 0);
+            this.paneltitlebar.Name = "paneltitlebar";
+            this.paneltitlebar.Size = new System.Drawing.Size(1318, 100);
+            this.paneltitlebar.TabIndex = 1;
+            // 
+            // titlelbl
+            // 
+            this.titlelbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.titlelbl.AutoSize = true;
+            this.titlelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titlelbl.ForeColor = System.Drawing.Color.White;
+            this.titlelbl.Location = new System.Drawing.Point(611, 31);
+            this.titlelbl.Name = "titlelbl";
+            this.titlelbl.Size = new System.Drawing.Size(112, 37);
+            this.titlelbl.TabIndex = 0;
+            this.titlelbl.Text = "HOME";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.LightGray;
+            this.label1.Location = new System.Drawing.Point(21, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(166, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ADMIN MENU";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox9);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(250, 100);
+            this.panel1.MinimumSize = new System.Drawing.Size(1000, 450);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1318, 547);
+            this.panel1.TabIndex = 2;
+            // 
+            // btnclose
+            // 
+            this.btnclose.FlatAppearance.BorderSize = 0;
+            this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnclose.Location = new System.Drawing.Point(41, 31);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(83, 49);
+            this.btnclose.TabIndex = 1;
+            this.btnclose.Text = "Close";
+            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox9.Image = global::SElabProject.Properties.Resources.hotel__1__removebg_preview__1_;
+            this.pictureBox9.Location = new System.Drawing.Point(413, 26);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(350, 277);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
+            // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.White;
@@ -290,47 +361,6 @@ namespace SElabProject
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // paneltitlebar
-            // 
-            this.paneltitlebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.paneltitlebar.Controls.Add(this.titlelbl);
-            this.paneltitlebar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.paneltitlebar.Location = new System.Drawing.Point(250, 0);
-            this.paneltitlebar.Name = "paneltitlebar";
-            this.paneltitlebar.Size = new System.Drawing.Size(1318, 100);
-            this.paneltitlebar.TabIndex = 1;
-            // 
-            // titlelbl
-            // 
-            this.titlelbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.titlelbl.AutoSize = true;
-            this.titlelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titlelbl.ForeColor = System.Drawing.Color.White;
-            this.titlelbl.Location = new System.Drawing.Point(611, 31);
-            this.titlelbl.Name = "titlelbl";
-            this.titlelbl.Size = new System.Drawing.Size(112, 37);
-            this.titlelbl.TabIndex = 0;
-            this.titlelbl.Text = "HOME";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(21, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ADMIN MENU";
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(250, 100);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1318, 547);
-            this.panel1.TabIndex = 2;
-            // 
             // Menupage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -344,6 +374,11 @@ namespace SElabProject
             this.panelmenu.ResumeLayout(false);
             this.panellogo.ResumeLayout(false);
             this.panellogo.PerformLayout();
+            this.paneltitlebar.ResumeLayout(false);
+            this.paneltitlebar.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -352,8 +387,6 @@ namespace SElabProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.paneltitlebar.ResumeLayout(false);
-            this.paneltitlebar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -381,5 +414,7 @@ namespace SElabProject
         private System.Windows.Forms.Label titlelbl;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnclose;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }

@@ -23,7 +23,9 @@ namespace SElabProject
         {
             InitializeComponent();
             random = new Random();
-        }
+            btnclose.Visible = false;
+           
+    }
         //Methods
         private Color SelectThemeColor()
         {
@@ -50,6 +52,7 @@ namespace SElabProject
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     paneltitlebar.BackColor = color;
                     panellogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+                    btnclose.Visible = true;
                 }
             }
         }
@@ -84,6 +87,7 @@ namespace SElabProject
         {
             // ActivateButton(sender);
             OpenChildForm(new signin(), sender);
+           // OpenChildForm(new Form1(), sender);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -114,6 +118,23 @@ namespace SElabProject
         private void button7_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+        }
+
+       
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            Reset();
+        }
+        private void Reset()
+        {
+            DisableButton();
+            label1.Text = "HOME";
+            paneltitlebar.BackColor = Color.FromArgb(0, 150, 136);
+            panellogo.BackColor = Color.FromArgb(39, 39, 58);
+            currentButton = null;
+            btnclose.Visible = false;
         }
     }
 }
