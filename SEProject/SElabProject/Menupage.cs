@@ -79,7 +79,7 @@ namespace SElabProject
             this.panel1.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            label1.Text = childForm.Text;
+          //  label1.Text = childForm.Text;
         }
 
 

@@ -46,9 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminmenu.Designer.cs">
+      <DependentUpon>adminmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BL\bill.cs" />
+    <Compile Include="BL\cus.cs" />
+    <Compile Include="BL\customer.cs" />
     <Compile Include="BL\ThemeColor.cs" />
     <Compile Include="BL\MUSER.cs" />
+    <Compile Include="DataGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGrid.Designer.cs">
+      <DependentUpon>DataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DL\customerDL.cs" />
     <Compile Include="DL\MUSERDL.cs" />
+    <Compile Include="edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit.Designer.cs">
+      <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,12 +91,39 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservation.Designer.cs">
+      <DependentUpon>reservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservation2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservation2.Designer.cs">
+      <DependentUpon>reservation2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roomassign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roomassign.Designer.cs">
+      <DependentUpon>roomassign.cs</DependentUpon>
+    </Compile>
     <Compile Include="signup.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="signup.Designer.cs">
       <DependentUpon>signup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="adminmenu.resx">
+      <DependentUpon>adminmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGrid.resx">
+      <DependentUpon>DataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit.resx">
+      <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +143,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="reservation.resx">
+      <DependentUpon>reservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservation2.resx">
+      <DependentUpon>reservation2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roomassign.resx">
+      <DependentUpon>roomassign.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="signup.resx">
       <DependentUpon>signup.cs</DependentUpon>
     </EmbeddedResource>

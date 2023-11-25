@@ -16,7 +16,8 @@ namespace SElabProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menupage());
+            Application.Run(new Form1());
+           // Application.Run(new roomassign());
         }
     }
 }

@@ -152,13 +152,14 @@ namespace SElabProject
             // 
             // comboBox1
             // 
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "ADMIN",
             "CUSTOMER"});
             this.comboBox1.Location = new System.Drawing.Point(93, 299);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(300, 28);
+            this.comboBox1.Size = new System.Drawing.Size(318, 28);
             this.comboBox1.TabIndex = 25;
             // 
             // pictureBox4

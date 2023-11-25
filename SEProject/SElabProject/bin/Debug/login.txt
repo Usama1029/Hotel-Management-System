@@ -2,3 +2,7 @@ usama,123,ADMIN
 saad,456,CUSTOMER
 hamza,777,ADMIN
 usa,000,CUSTOMER
+hamza,990,ADMIN
+manan,888,ADMIN
+bilal,777,ADMIN
+saad,888,ADMIN

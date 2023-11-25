@@ -14,6 +14,7 @@ namespace SElabProject
 {
     public partial class signin : Form
     {
+        private Form activeForm;
         public signin()
         {
             InitializeComponent();
@@ -42,12 +43,15 @@ namespace SElabProject
             MessageBox.Show("user added successfully ");
             clearform();
         }
+       
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form moreform = new Form1();
+           // Form moreform = new Form1();
             this.Hide();
-            moreform.Show();
+            // moreform.Show();
+           
         }
     }
 }

@@ -52,19 +52,27 @@ namespace SElabProject
             if (valid != null)
             {
                 MessageBox.Show("valid user");
+                if(valid.getrole() == "ADMIN")
+                {
+                    adminmenu f = new adminmenu();
+                    this.Hide();
+                    f.ShowDialog();
+                }
             }
             else if(valid == null)
             {
                 MessageBox.Show("invalid user");
             }
-           // clearform();
+            
+            
+            // clearform();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form moreform = new Form1();
+            Form1 f = new Form1();
             this.Hide();
-            moreform.Show();
+            f.ShowDialog();
         }
     }
 }

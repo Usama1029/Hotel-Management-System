@@ -11,3 +11,9 @@ D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.login.resou
 D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.Form1.resources
 D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.signin.resources
 D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.Menupage.resources
+D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.adminmenu.resources
+D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.reservation.resources
+D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.reservation2.resources
+D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.roomassign.resources
+D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.DataGrid.resources
+D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.edit.resources
