@@ -18,7 +18,17 @@ namespace SElabProject
         {
             InitializeComponent();
             string path = @"D:\5Th Semester\SE LAB\SEProject\SElabProject\bin\Debug\login.txt";
-
+            if(MealorderDL.readfromfile(path))
+            {
+               if(MealDL.readfromfile(path))
+                {
+                    if(customerDL.readfromfileforbill(path))
+                    {
+                      //  MessageBox.Show("sdaf");
+                    }
+                   
+                }
+            }
             if(MUSERDL.readDATA(path))
             {
                // MessageBox.Show("Data is loaded");

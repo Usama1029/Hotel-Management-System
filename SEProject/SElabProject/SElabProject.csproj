@@ -52,11 +52,30 @@
     <Compile Include="adminmenu.Designer.cs">
       <DependentUpon>adminmenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Billpayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billpayment.Designer.cs">
+      <DependentUpon>Billpayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="BL\bill.cs" />
     <Compile Include="BL\cus.cs" />
     <Compile Include="BL\customer.cs" />
+    <Compile Include="BL\userorder.cs" />
     <Compile Include="BL\ThemeColor.cs" />
     <Compile Include="BL\MUSER.cs" />
+    <Compile Include="booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booking.Designer.cs">
+      <DependentUpon>booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMenu.Designer.cs">
+      <DependentUpon>CustomerMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataGrid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,12 +83,21 @@
       <DependentUpon>DataGrid.cs</DependentUpon>
     </Compile>
     <Compile Include="DL\customerDL.cs" />
+    <Compile Include="DL\FeedbackDL.cs" />
+    <Compile Include="DL\MealDL.cs" />
+    <Compile Include="DL\MealorderDL.cs" />
     <Compile Include="DL\MUSERDL.cs" />
     <Compile Include="edit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedBack.Designer.cs">
+      <DependentUpon>FeedBack.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -83,11 +111,36 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="meal.cs" />
+    <Compile Include="mealadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mealadmin.Designer.cs">
+      <DependentUpon>mealadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mealgrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mealgrid.Designer.cs">
+      <DependentUpon>mealgrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mealorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mealorder.Designer.cs">
+      <DependentUpon>mealorder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menupage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menupage.Designer.cs">
       <DependentUpon>Menupage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payment.Designer.cs">
+      <DependentUpon>payment.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,11 +171,23 @@
     <EmbeddedResource Include="adminmenu.resx">
       <DependentUpon>adminmenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Billpayment.resx">
+      <DependentUpon>Billpayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booking.resx">
+      <DependentUpon>booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMenu.resx">
+      <DependentUpon>CustomerMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataGrid.resx">
       <DependentUpon>DataGrid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedBack.resx">
+      <DependentUpon>FeedBack.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -130,8 +195,20 @@
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mealadmin.resx">
+      <DependentUpon>mealadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mealgrid.resx">
+      <DependentUpon>mealgrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mealorder.resx">
+      <DependentUpon>mealorder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menupage.resx">
       <DependentUpon>Menupage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment.resx">
+      <DependentUpon>payment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

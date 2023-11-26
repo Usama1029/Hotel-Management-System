@@ -43,6 +43,55 @@ namespace SElabProject.DL
             f.Flush();
             f.Close();
         }
+        public static bool readfromfileforbill(string path2)
+        {
+            StreamReader f = new StreamReader(path2);
+            string record;
+            if (File.Exists(path2))
+            {
+                while ((record = f.ReadLine()) != null)
+                {
+                    string[] splittedrecord = record.Split(',');
+
+                    // Check if the array has enough elements before accessing them
+                    if (splittedrecord.Length >= 5)
+                    {
+                        string name = splittedrecord[0];
+                        string password = splittedrecord[1];
+                        int days = ConvertStringToInt(splittedrecord[2]);
+                        int bill = ConvertStringToInt(splittedrecord[3]);
+                        int roomnu = ConvertStringToInt(splittedrecord[4]);
+
+                        bill c = new bill(name,password,bill,days,roomnu);
+                        paymentlist.Add(c);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Error: Insufficient elements in the record '{record}'. Skipping this record.");
+                    }
+                }
+                f.Close();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static int ConvertStringToInt(string value)
+        {
+            if (int.TryParse(value, out int result))
+            {
+                return result;
+            }
+            else
+            {
+                // Handle parsing error, log, or return a default value
+                Console.WriteLine($"Error converting '{value}' to an integer. Using default value (e.g., 0).");
+                return 0; // You can change this default value as needed
+            }
+        }
+
         public static void editfromlist(customer previous, customer updated)
         {
             foreach (customer c in studentlist)

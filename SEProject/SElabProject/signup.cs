@@ -42,6 +42,9 @@ namespace SElabProject
             MUSERDL.storedataintofile(user, path);
             MessageBox.Show("user added successfully ");
             clearform();
+            Form1 s = new Form1();
+            this.Close();
+            s.ShowDialog();
         }
        
        

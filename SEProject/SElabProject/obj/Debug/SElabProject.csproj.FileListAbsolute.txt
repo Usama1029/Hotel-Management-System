@@ -17,3 +17,11 @@ D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.reservation
 D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.roomassign.resources
 D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.DataGrid.resources
 D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.edit.resources
+D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.MealOrder.resources
+D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.FeedBack.resources
+D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.CustomerMenu.resources
+D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.booking.resources
+D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.mealgrid.resources
+D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.Ordercustomer.resources
+D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.payment.resources
+D:\5Th Semester\SE LAB\SEProject\SElabProject\obj\Debug\SElabProject.Billpayment.resources

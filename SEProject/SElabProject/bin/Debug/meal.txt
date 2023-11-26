@@ -1,0 +1,7 @@
+Apple,100
+Pizza,1000
+Salad,1000
+Beef,1500
+Chicken,1200
+Vegetable,400
+Drink,500

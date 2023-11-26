@@ -12,11 +12,18 @@ using SElabProject.DL;
 
 namespace SElabProject
 {
-    public partial class roomassign : Form
+    public partial class booking : Form
     {
-        public roomassign()
+        public booking()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CustomerMenu f = new CustomerMenu();
+            this.Hide();
+            f.ShowDialog();
         }
         private void clearform()
         {
@@ -29,13 +36,6 @@ namespace SElabProject
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            adminmenu f = new adminmenu();
-            this.Hide();
-            f.ShowDialog();
-        }
-
         private void add_Click(object sender, EventArgs e)
         {
             string path = "bill.txt";
@@ -45,7 +45,7 @@ namespace SElabProject
             int roomnomber = int.Parse(textroom.Text);
             int days = int.Parse(txtdays.Text);
             int bill = int.Parse(txtbill.Text);
-            MUSER user = new MUSER(name,pass);
+            MUSER user = new MUSER(name, pass);
             MUSER valid = MUSERDL.signin(user);
             if (valid == null)
             {
@@ -55,9 +55,9 @@ namespace SElabProject
             {
                 int payment;
                 payment = bill * days;
-                bill b = new bill(name, pass, payment, days,roomnomber);
-              bool checkroom =   customerDL.findroom(b, roomnomber);
-                if(checkroom == true)
+                bill b = new bill(name, pass, payment, days, roomnomber);
+                bool checkroom = customerDL.findroom(b, roomnomber);
+                if (checkroom == true)
                 {
                     MessageBox.Show("This room already assign choose another ");
                     textroom.Text = "";
@@ -71,10 +71,6 @@ namespace SElabProject
                 }
             }
         }
-
-        private void roomassign_Load(object sender, EventArgs e)
-        {
-
-        }
     }
-}
+    }
+

@@ -6,3 +6,8 @@ hamza,990,ADMIN
 manan,888,ADMIN
 bilal,777,ADMIN
 saad,888,ADMIN
+abd,333,CUSTOMER
+hassan,212,CUSTOMER
+ali,9999,CUSTOMER
+asa,99,CUSTOMER
+ahsan,a2,ADMIN

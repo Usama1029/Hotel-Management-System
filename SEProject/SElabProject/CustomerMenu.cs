@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SElabProject.BL;
+using SElabProject.DL;
 
 namespace SElabProject
 {
-    public partial class adminmenu : Form
+    public partial class CustomerMenu : Form
     {
-        public adminmenu()
+        public CustomerMenu()
         {
             InitializeComponent();
         }
@@ -26,7 +28,7 @@ namespace SElabProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            roomassign f = new roomassign();
+            booking f = new booking();
             this.Hide();
             f.ShowDialog();
         }
@@ -40,14 +42,7 @@ namespace SElabProject
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MealOrder f = new MealOrder();
-            this.Hide();
-            f.ShowDialog();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            FeedBack f = new FeedBack();
+            mealgrid f = new mealgrid();
             this.Hide();
             f.ShowDialog();
         }
@@ -59,7 +54,14 @@ namespace SElabProject
             f.ShowDialog();
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FeedBack f = new FeedBack();
+            this.Hide();
+            f.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
         {
             this.Close();
         }

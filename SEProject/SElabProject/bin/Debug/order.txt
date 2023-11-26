@@ -1,0 +1,6 @@
+usama,989,Apple,100,2
+usama,989,Apple,100,2
+usman,as4,drink,500,5
+usama,999,pizza,1000,8
+saad,111,pizza,1200,2
+hamza89,88898h,vegetable,400,2

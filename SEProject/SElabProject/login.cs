@@ -58,6 +58,12 @@ namespace SElabProject
                     this.Hide();
                     f.ShowDialog();
                 }
+                else if(valid.getrole() == "CUSTOMER")
+                {
+                    CustomerMenu f = new CustomerMenu();
+                    this.Hide();
+                    f.ShowDialog();
+                }
             }
             else if(valid == null)
             {
